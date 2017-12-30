@@ -1,0 +1,44 @@
+{
+  "name": "crm-poc",
+  "version": "1.0.0",
+  "description": "Repo to house proof of concept docs for a CRM Admin UI",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node -r dotenv/config server.js",
+    "env": "cp .env.example .env && heroku config --app=positron-staging | grep -E `cat .env.example | grep REPLACE | cut -f1 -d= | xargs | tr ' ' \\|` | sed -e 's/:\\ /=/g' | sed -e 's/ //g' >> .env",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigspaeth/crm-poc.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigspaeth/crm-poc/issues"
+  },
+  "homepage": "https://github.com/craigspaeth/crm-poc#readme",
+  "dependencies": {
+    "@artsy/reaction-force": "^0.17.3",
+    "babel-core": "^6.26.0",
+    "babel-plugin-styled-components": "^1.4.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "dotenv": "^4.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jest": "^22.0.4",
+    "next": "^4.2.1",
+    "passport": "^0.4.0",
+    "passport-oauth2": "craigspaeth/passport-oauth2",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "styled-components": "^2.4.0",
+    "superagent": "^3.8.2"
+  }
+}
