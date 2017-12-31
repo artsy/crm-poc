@@ -7,6 +7,7 @@ import { sidebarWidth, margins } from './styles'
 const Main = styled.div`
   margin-left: ${sidebarWidth}px;
   min-height: 100vh;
+  width: calc(100vw - ${sidebarWidth + margins.l * 2}px);
   padding: ${margins.l}px;
 `
 
