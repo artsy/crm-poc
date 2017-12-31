@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Repo to house proof of concept docs for a CRM Admin UI",
   "main": "index.js",
+  "engines": {
+    "node": "8.x.x"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node -r dotenv/config server.js",

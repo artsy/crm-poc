@@ -46,7 +46,7 @@ export const Sidebar = () => (
       <NavItem><Link href='/'>Home</Link></NavItem>
       <NavItem><Link href='/people'>People</Link></NavItem>
       <NavItem><Link href='/import'>Import</Link></NavItem>
-      <NavItem><Link href='/feeds'>Fees</Link></NavItem>
+      <NavItem><Link href='/feeds'>Feeds</Link></NavItem>
       <NavItem><Link href='/logout'>Logout</Link></NavItem>
     </Nav>
   </Container>

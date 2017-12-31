@@ -13,6 +13,7 @@ var mockResponse = {
 
 var Request = {
   post: jest.genMockFunction().mockReturnThis(),
+  put: jest.genMockFunction().mockReturnThis(),
   get: jest.genMockFunction().mockReturnThis(),
   send: jest.genMockFunction().mockReturnThis(),
   query: jest.genMockFunction().mockReturnThis(),

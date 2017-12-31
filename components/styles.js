@@ -25,6 +25,8 @@ export const type = (family, size) => {
       letter-spacing: 1px;
       font-size: ${(() => {
         switch (size) {
+          case 's-headline':
+            return '11px'
           case 'body':
             return '13px'
           case 'm-headline':
@@ -41,6 +43,8 @@ export const type = (family, size) => {
         switch (size) {
           case 'l-headline':
             return '37px'
+          case 'headline':
+            return '30px'
           case 's-body':
             return '17px'
           default:
